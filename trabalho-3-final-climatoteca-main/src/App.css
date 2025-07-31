@@ -1,0 +1,120 @@
+#root {
+  width: 100%;
+  max-width: 1700px;
+  height: 94vh;
+
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+
+  grid-template-columns: 4rem .6fr .4fr;
+  grid-template-rows: 4rem .3fr .3fr .4fr;
+  grid-template-areas:
+    "sidebar   day     searchbar"
+    "sidebar   day     week"
+    "sidebar   day     weather"
+    "sidebar   graph   weather";
+}
+
+@media (max-width: 350px) {
+  #root {
+    width: 290px;
+  }
+}
+
+@media (max-width: 889px) {
+  #root {
+    grid-template-columns: 4rem 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .showOnMobile {
+    display: block;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  background-color: var(--card-bg-hover);
+  border-color: var(--border-color-hover);
+}
+
+.day-info,
+.searchbar,
+.week-info,
+.weather-info,
+.day-graph {
+  min-width: 255px;
+  max-width: 100%;
+}
+
+.sidebar { grid-area: sidebar; }
+
+.day-info { grid-area: day; }
+
+.searchbar { grid-area: searchbar; }
+
+.week-info { grid-area: week; }
+
+.weather-info { grid-area: weather; }
+
+.day-graph { grid-area: graph; }
+
+.showOnMobile { display: none; }
+
+.hideOnMobile { display: block; }
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  transition: all .1s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-bg-hover);
+}
+
+button:active {
+  background-color: var(--button-bg-click);
+}
+
+.loading-error-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--gray-500);
+}
+
+.skeleton {
+  background-color: var(--loading-bg);
+  border-radius: .5rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%   { opacity: 1; }
+  50%  { opacity: .4; }
+  100% { opacity: 1; }
+}

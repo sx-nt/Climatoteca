@@ -1,0 +1,78 @@
+.weekInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 11.8rem;
+
+  background-color: var(--card-bg-hover);
+  padding: .8rem 1.3rem;
+  border-radius: .5rem;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.weekInfo:hover .day {
+  background-color: var(--card-bg);
+}
+
+.day:hover {
+  transform: translateY(-3px);
+}
+
+.dayName {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.temps {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.maxTemp {
+  color: var(--max-temp);
+  font-weight: bold;
+}
+
+.minTemp {
+  color: var(--min-temp);
+}
+
+.imgWrapper {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 4rem;
+  height: auto;
+}
+
+@media (max-width: 350px) {
+  .day {
+    padding-inline: 0.8rem;
+  }
+}

@@ -1,0 +1,36 @@
+.suggestions {
+  position: absolute;
+  z-index: 1000;
+  top: 103%;
+
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 0px;
+}
+
+.suggestions li {
+  list-style: none;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+
+  box-sizing: border-box;
+}
+
+.suggestions li:hover {
+  background-color: var(--card-bg-hover);
+}
+
+.coordinates {
+  color: var(--gray-500);
+}
+
+.country {
+  color: var(--gray-500);
+  font-weight: 700;
+}

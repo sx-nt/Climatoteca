@@ -1,0 +1,35 @@
+.button {
+  border: none;
+  outline: none;
+  offset: none;
+
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 1rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 0 1.3rem;
+  height: 100%;
+
+  cursor: pointer;
+
+  min-width: none;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.geolocation {
+  display: block;
+}
+
+@media (max-width: 350px) {
+  .geolocation {
+    display: none;
+  }
+}

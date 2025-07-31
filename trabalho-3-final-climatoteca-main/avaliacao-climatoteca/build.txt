@@ -1,0 +1,21 @@
+
+> climatoteca@0.0.0 build
+> tsc -b && vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 438 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                          0.41 kB │ gzip:   0.27 kB
+dist/assets/index-D-ih2WzG.css          11.67 kB │ gzip:   2.91 kB
+dist/assets/html2canvas-Ii7_Hma7.js      0.46 kB │ gzip:   0.33 kB
+dist/assets/purify.es-CQJ0hv7W.js       21.82 kB │ gzip:   8.58 kB
+dist/assets/index.es-Bnf6fr5D.js       150.42 kB │ gzip:  51.39 kB
+dist/assets/index-D2Sx-brv.js        1,011.67 kB │ gzip: 310.09 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 7.27s

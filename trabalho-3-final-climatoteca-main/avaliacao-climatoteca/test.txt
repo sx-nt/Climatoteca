@@ -1,0 +1,47 @@
+
+> climatoteca@0.0.0 test
+> vitest run --reporter=verbose
+
+
+ RUN  v0.34.6 /home/adriano-lima/Desenvolvimento/disciplinas/FE2/projetos/trabalho-3-final-climatoteca
+
+ ✓ src/components/GeolocationButton/GeolocationButton.test.tsx > GeoLocationButton > renderiza o botão de geolocalização
+ ✓ src/components/GeolocationButton/GeolocationButton.test.tsx > GeoLocationButton > chama navigator.geolocation.getCurrentPosition ao clicar no botão
+ ✓ src/components/WeatherCard/WeatherCard.test.tsx > WeatherCard > verifica se rederiza com todos os dados fornecido
+ ✓ src/components/WeatherCard/WeatherCard.test.tsx > WeatherCard > testa se o componente não renderiza imagem quando o ícone não é passado
+ ✓ src/components/WeatherCard/WeatherCard.test.tsx > WeatherCard > testa o loaidng, renderiza skeletons se estiver carregando
+ ✓ src/components/WeatherCard/WeatherCard.test.tsx > WeatherCard > testa se o componente não renderiza a imagem quando o icon é uma string vazia
+ ✓ src/components/WeatherCard/WeatherCard.test.tsx > WeatherCard > testa se o componente não quebra se nenhuma prop for passada
+ ✓ src/components/WeekInfo/WeekInfo.test.tsx > WeekInfo > renderiza loading quando loading é true
+ ✓ src/components/WeekInfo/WeekInfo.test.tsx > WeekInfo > renderiza previsão do tempo quando carregamento termina
+ ✓ src/components/DayGraph/DayGraph.test.tsx > daygraph > verifica se o gráfico renderiza os últimos 5 dias em ordem cronológica correta e as médias certas
+ ✓ src/components/DayGraph/DayGraph.test.tsx > daygraph > verifica se o componente mostra um esqueleto enquanto carrega os dados
+ ✓ src/components/DayGraph/DayGraph.test.tsx > daygraph > verifica se aparece mensagem caso não haja dados históricos
+ ✓ src/components/DayGraph/DayGraph.test.tsx > daygraph > exibe mensagem se não houver dados históricos
+ ✓ src/components/ThemeButton/ThemeButton.test.tsx > testes do theme button > mostra o ícone da lua quando no tema claro
+ ✓ src/components/ThemeButton/ThemeButton.test.tsx > testes do theme button > mostra o ícone do sol quando no tema escuro
+ ✓ src/components/ThemeButton/ThemeButton.test.tsx > testes do theme button > alterna entre temas quando clicado
+ ✓ src/components/ThemeButton/ThemeButton.test.tsx > testes do theme button > aplica o tema salvo ao carregar
+ ✓ src/components/DownloadButton/DownloadButton.test.tsx > DownloadButton > renderiza o botão de download
+ ✓ src/components/DownloadButton/DownloadButton.test.tsx > DownloadButton > chama a função de download ao clicar no botão
+ ✓ src/components/Sidebar/Sidebar.test.tsx > testes do sidebar > renderiza os três botões principais
+ ✓ src/components/Sidebar/Sidebar.test.tsx > testes do sidebar > mostra as dicas (tooltips) pra cada botão
+ ✓ src/components/Sidebar/Sidebar.test.tsx > testes do sidebar > tem a estrutura de classes correta
+ ✓ src/components/DayInfo/DayInfo.test.tsx > Testes do Componente de Informações do Dia > mostra o indicador de carregamento quando está buscando dados
+ ✓ src/components/DayInfo/DayInfo.test.tsx > Testes do Componente de Informações do Dia > mostra a mensagem de erro quando a busca falha
+ ✓ src/components/DayInfo/DayInfo.test.tsx > Testes do Componente de Informações do Dia > mostra as informações do tempo quando os dados são carregados
+ ✓ src/components/HistoryButton/HistoryButton.test.tsx > testes do history button > mostra o botao de historico
+ ✓ src/components/HistoryButton/HistoryButton.test.tsx > testes do history button > carrega o historico quando aberto
+ ✓ src/components/HistoryButton/HistoryButton.test.tsx > testes do history button > mostra mensagem quando nao tem historico
+ ✓ src/components/WheatherInfo/WeatherInfo.test.tsx > WeatherInfo > renderiza weathercard com dados quando disponíveis
+ ✓ src/components/WheatherInfo/WeatherInfo.test.tsx > WeatherInfo >  testa se o componente mostra skeletons enquanto está carregando os dados
+ ✓ src/components/WheatherInfo/WeatherInfo.test.tsx > WeatherInfo >  testa se o componente mostra uma mensagem de erro quando o hook retorna erro
+ ✓ src/components/WheatherInfo/WeatherInfo.test.tsx > WeatherInfo > testa se o componente mostra aviso quando não há dados disponíveis e não está carregando nem com erro
+ ✓ src/components/Searchbar/Searchbar.test.jsx > Searchbar > renderiza o searchbar, input e o botão de pesquisa
+ ✓ src/components/Searchbar/Searchbar.test.jsx > Searchbar > submete o formulário ao clicar no botão de pesquisa
+
+ Test Files  11 passed (11)
+      Tests  34 passed (34)
+   Start at  18:36:06
+   Duration  7.13s (transform 377ms, setup 2.56s, collect 1.01s, tests 1.26s, environment 9.64s, prepare 1.87s)
+

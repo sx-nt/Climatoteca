@@ -1,0 +1,80 @@
+.wrapper {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  min-height: 4rem;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  border-radius: 1rem;
+  background-color: var(--card-bg);
+  transition: all 0.1s ease-in-out;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  offset: none;
+
+  width: 100%;
+
+  background-color: var(--card-bg);
+  border-radius: 1rem 0px 0px 1rem;
+
+  padding-inline-start: 2rem;
+  font-size: 1rem;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.input:hover,
+.form:has(.input:hover) {
+  background-color: var(--card-bg-hover);
+}
+
+.input:focus,
+.form:has(.input:focus) {
+  background-color: var(--card-bg-hover);
+}
+
+.button {
+  border: none;
+  outline: none;
+  offset: none;
+
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 1rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 0 1.3rem;
+  height: 100%;
+
+  cursor: pointer;
+
+  min-width: none;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.button:active {
+  background-color: var(--button-bg-click);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .showOnMobile {
+    display: block;
+  }
+}

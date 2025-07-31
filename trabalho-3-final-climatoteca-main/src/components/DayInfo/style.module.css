@@ -1,0 +1,130 @@
+.dayInfo {
+  padding: 2rem;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cityName {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dateTime {
+  color: var(--gray-500);
+  font-size: 1rem;  
+  margin: 0;
+}
+
+.climaPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+}
+
+.temperature {
+  font-size: 8rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.weather_icon {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.temps {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+
+.maxTemp{
+    color: var(--max-temp);
+    margin-left: 0;
+    padding-left: 0;
+    font-weight: bold; 
+}
+
+.tempsDesc {
+  margin: 0;
+  margin-bottom: 2.5rem;
+
+}
+
+.minMaxTemps {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+
+.maxTemp {
+  font-weight: 600;
+  color: var(--max-temp);
+}
+
+.descricao {
+  color: var(--gray-500);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1300px) {
+  .temps {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 890px) {
+  .dayInfo {
+    padding: 2rem 1rem;
+  }
+  .head {
+    align-items: center;
+    text-align: center;
+  }
+  .cityName {
+    font-size: 2rem;
+  }
+  .climaPrincipal {
+    flex-direction: column;
+  }
+  .temps {
+    align-items: center;
+  }
+  .tempsDesc {
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .dayInfo {
+    padding: 2rem 1rem;
+  }
+  .head {
+    align-items: center;
+    text-align: center;
+  }
+  .cityName {
+    font-size: 2rem;
+  }
+  .climaPrincipal {
+    flex-direction: column;
+  }
+  .temps {
+    align-items: center;
+  }
+  .tempsDesc {
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,68 @@
+
+> climatoteca@0.0.0 format
+> prettier --write .
+
+.prettierrc 73ms (unchanged)
+avaliacao-climatoteca/avaliacao-climatoteca.md 75ms
+avaliacao-climatoteca/avaliacao.md 29ms
+docs/func.md 32ms (unchanged)
+docs/req.md 141ms (unchanged)
+eslint.config.js 42ms (unchanged)
+index.html 82ms (unchanged)
+package-lock.json 138ms (unchanged)
+package.json 2ms (unchanged)
+README.md 30ms
+src/App.css 73ms
+src/App.tsx 101ms
+src/components/DayGraph/DayGraph.test.tsx 72ms
+src/components/DayGraph/index.tsx 51ms
+src/components/DayGraph/style.module.css 3ms
+src/components/DayInfo/DayInfo.test.tsx 33ms
+src/components/DayInfo/index.tsx 74ms
+src/components/DayInfo/style.module.css 16ms
+src/components/DownloadButton/DownloadButton.test.tsx 20ms
+src/components/DownloadButton/index.tsx 105ms
+src/components/GeolocationButton/GeolocationButton.test.tsx 8ms
+src/components/GeolocationButton/index.tsx 15ms
+src/components/GeolocationButton/style.module.css 4ms (unchanged)
+src/components/HistoryButton/HistoryButton.test.tsx 15ms
+src/components/HistoryButton/index.tsx 20ms
+src/components/Searchbar/index.tsx 7ms
+src/components/Searchbar/Searchbar.test.jsx 16ms
+src/components/Searchbar/style.module.css 12ms (unchanged)
+src/components/Sidebar/index.tsx 7ms (unchanged)
+src/components/Sidebar/Sidebar.test.tsx 13ms
+src/components/Sidebar/style.module.css 18ms
+src/components/Suggestions/index.tsx 7ms (unchanged)
+src/components/Suggestions/styles.module.css 4ms (unchanged)
+src/components/ThemeButton/index.tsx 11ms (unchanged)
+src/components/ThemeButton/ThemeButton.test.tsx 15ms
+src/components/WeatherCard/index.tsx 13ms
+src/components/WeatherCard/style.module.css 12ms
+src/components/WeatherCard/WeatherCard.test.tsx 13ms
+src/components/WeekInfo/index.tsx 24ms
+src/components/WeekInfo/style.module.css 6ms
+src/components/WeekInfo/WeekInfo.test.tsx 16ms
+src/components/WheatherInfo/index.tsx 12ms
+src/components/WheatherInfo/style.module.css 4ms
+src/components/WheatherInfo/WeatherInfo.test.tsx 10ms
+src/constants/api.tsx 3ms
+src/contexts/LocationContext.tsx 13ms (unchanged)
+src/contexts/WeatherContext.tsx 21ms
+src/hooks/searchHook.tsx 36ms
+src/index.css 17ms (unchanged)
+src/interfaces/geolocation.ts 2ms (unchanged)
+src/interfaces/location.ts 3ms (unchanged)
+src/interfaces/weather.ts 10ms
+src/main.tsx 5ms (unchanged)
+src/types/html2pdf.d.ts 4ms
+src/utils/iconMap.ts 16ms
+src/utils/ProcessForecast.ts 25ms
+src/utils/Storage.ts 10ms
+src/vite-env.d.ts 3ms (unchanged)
+tsconfig.app.json 4ms (unchanged)
+tsconfig.json 3ms
+tsconfig.node.json 2ms (unchanged)
+vite.config.ts 3ms (unchanged)
+vitest-setup.js 3ms
+vitest.config.ts 2ms

@@ -1,0 +1,102 @@
+:root {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  --primary-50: #f5f3ff;
+  --primary-100: #ede9fe;
+  --primary-200: #ddd6fe;
+  --primary-300: #c4b5fd;
+  --primary-400: #a78bfa;
+  --primary-500: #8b5cf6; /* PRINCIPAL */
+  --primary-600: #7c3aed;
+  --primary-700: #6d28d9;
+  --primary-800: #5b21b6;
+  --primary-900: #4c1d95;
+
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #363636;
+  --gray-900: #2a2a2a;
+  --gray-1000: #1e1e1e;
+
+  color-scheme: light;
+  --color-bg: #ffffff;
+  --color-text: #121212;
+
+  --button-bg: var(--primary-500);
+  --button-text: #fff;
+  --button-bg-hover: var(--primary-700);
+  --button-bg-click: var(--primary-900);
+
+  --card-bg: var(--gray-100);
+  --card-bg-hover: var(--gray-200);
+
+  --border-color: var(--gray-200);
+  --border-color-hover: var(--gray-300);
+
+  --loading-bg: var(--gray-300);
+  --loading-bg-hover: var(--gray-200);
+
+  --min-temp: var(--gray-600);
+  --max-temp: var(--primary-500);
+}
+
+:root.dark {
+  color-scheme: dark;
+  --color-bg: #121212;
+  --color-text: #ffffff;
+
+  --button-bg: var(--gray-100);
+  --button-text: var(--gray-700);
+  --button-bg-hover: var(--gray-200);
+  --button-bg-click: var(--gray-300);
+
+  --card-bg: var(--gray-1000);
+  --card-bg-hover: var(--gray-900);
+
+  --border-color: var(--gray-900);
+  --border-color-hover: var(--gray-800);
+
+  --loading-bg: var(--gray-800);
+  --loading-bg-hover: var(--gray-900);
+
+  --max-temp: var(--primary-500);
+  --min-temp: var(--primary-200);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  user-select: none;
+
+  box-sizing: border-box;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: var(--color-bg);
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
